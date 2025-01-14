@@ -8,11 +8,11 @@ import Link from "next/link"
 export default function Home() {
   return (
     <div className='max-w-7xl mx-auto px-6'>
-      <section className='py-20 space-y-12'>
+      <section className='py-10 md:py:20 space-y-8 md:space-y-12'>
         <h1 className='sr-only'>Drop Motion - Creative video agency</h1>
         <p className='text-4xl md:text-5xl font-light mb-4 md:leading-tight [text-wrap:balance]'>
-          We are the <span className='font-normal'>drop</span>,<br />
-          setting in <span className='font-normal'>motion</span> a ripple
+          We are the <span className='font-medium'>drop</span>,<br />
+          setting in <span className='font-medium'>motion</span> a ripple
           through
           <br />
           visual storytelling.
@@ -20,7 +20,7 @@ export default function Home() {
         <p className='text-4xl md:text-5xl font-bold mb-4 [text-wrap:balance]'>
           Drop Motion
         </p>
-        <p className='text-xl text-gray-500 max-w-2xl [text-wrap:balance]'>
+        <p className='text-xl text-gray-600 dark:text-gray-400 max-w-2xl [text-wrap:balance]'>
           We transform your business vision into compelling visual stories that
           drive real results.
         </p>

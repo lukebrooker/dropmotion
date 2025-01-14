@@ -10,7 +10,7 @@ import "./globals.css"
 const albertSans = Albert_Sans({
   subsets: ["latin"],
   // Include light weight for our font-light usage
-  weight: ["300", "400"],
+  weight: ["300", "400", "500", "600"],
 })
 
 export const metadata: Metadata = {
