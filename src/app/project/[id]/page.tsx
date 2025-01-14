@@ -33,9 +33,9 @@ export default async function Page({
 
         <div className='relative aspect-video w-full bg-gray-900 mb-12'>
           <iframe
-            src={`https://player.vimeo.com/video/${id}?h=00000000&title=0&byline=0&portrait=0&autoplay=1&muted=1&controls=1`}
+            src={`https://player.vimeo.com/video/${id}?h=00000000&title=0&byline=0&portrait=0&controls=1&dnt=1&autoplay=0`}
             className='absolute inset-0 w-full h-full'
-            allow='autoplay; fullscreen; picture-in-picture'
+            allow='fullscreen; picture-in-picture'
             allowFullScreen
             title={`${project.title} video`}
           />
