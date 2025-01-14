@@ -1,11 +1,11 @@
 import projects from "@/data/projects.json"
-import { VIDEO_IDS } from "@/lib/constants"
+import { toUrlPath } from "@/lib/utils"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 
 export function generateStaticParams() {
-  return VIDEO_IDS.map((id) => ({
-    id,
+  return projects.map((project) => ({
+    id: toUrlPath(project.title),
   }))
 }
 
@@ -15,7 +15,7 @@ export default async function Page({
   params: Promise<{ id: string }>
 }) {
   const { id } = await params
-  const project = projects.find((p) => p.videoId === id)
+  const project = projects.find((p) => toUrlPath(p.title) === id)
 
   if (!project) {
     notFound()
@@ -33,7 +33,7 @@ export default async function Page({
 
         <div className='relative aspect-video w-full bg-gray-900 mb-12'>
           <iframe
-            src={`https://player.vimeo.com/video/${id}?h=00000000&title=0&byline=0&portrait=0&controls=1&dnt=1&autoplay=0`}
+            src={`https://player.vimeo.com/video/${project.videoId}?h=00000000&title=0&byline=0&portrait=0&controls=1&dnt=1&autoplay=0`}
             className='absolute inset-0 w-full h-full'
             allow='fullscreen; picture-in-picture'
             allowFullScreen

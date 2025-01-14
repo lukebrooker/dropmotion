@@ -1,5 +1,6 @@
 import { CTAButton } from "@/components/CTAButton"
 import projects from "@/data/projects.json"
+import { toUrlPath } from "@/lib/utils"
 import { Project } from "@/types/project"
 import Image from "next/image"
 import Link from "next/link"
@@ -33,7 +34,7 @@ export default function Home() {
           {projects.map((project: Project) => (
             <Link
               key={project.id}
-              href={`/project/${project.videoId}`}
+              href={`/project/${toUrlPath(project.title)}`}
               className='group relative aspect-video bg-gray-900 overflow-hidden'
               aria-labelledby={`project-${project.id}-title`}
             >
