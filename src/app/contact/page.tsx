@@ -28,8 +28,8 @@ export default function Contact() {
             Transform your vision into impact
           </h1>
           <p className='text-lg text-gray-600 dark:text-gray-400 mb-20 max-w-2xl [text-wrap:balance]'>
-            Book your free creative strategy session and let's discuss how we
-            can help you achieve your goals through compelling visual
+            Book your free creative strategy session and let&apos;s discuss how
+            we can help you achieve your goals through compelling visual
             storytelling.
           </p>
 
@@ -39,7 +39,7 @@ export default function Contact() {
                 Thanks for reaching out!
               </h2>
               <p className='text-green-700 dark:text-green-300'>
-                We'll be in touch soon to discuss your project.
+                We&apos;ll be in touch soon to discuss your project.
               </p>
             </div>
           ) : (

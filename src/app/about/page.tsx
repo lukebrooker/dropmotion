@@ -65,7 +65,8 @@ export default function About() {
 
           <h2 className='text-2xl font-light mb-6'>Why partner with us?</h2>
           <p className='text-lg text-gray-600 dark:text-gray-400 mb-6 [text-wrap:balance]'>
-            We measure our success by your success. Whether you're aiming to:
+            We measure our success by your success. Whether you&apos; re aiming
+            to:
           </p>
           <ul
             className='list-disc list-inside text-gray-600 dark:text-gray-400 mb-12 space-y-2'
@@ -78,9 +79,9 @@ export default function About() {
 
           <p className='text-lg text-gray-600 dark:text-gray-400 mb-12 [text-wrap:balance]'>
             Our team transforms complex industry messages into clear, compelling
-            visual stories that drive action. We're not just creating videos –
-            we're crafting visual strategies that help you reach and exceed your
-            business goals.
+            visual stories that drive action. We&apos;re not just creating
+            videos - we&apos;re crafting visual strategies that help you reach
+            and exceed your business goals.
           </p>
         </div>
       </section>
@@ -98,8 +99,8 @@ export default function About() {
           </h2>
           <p className='text-lg text-gray-500 dark:text-gray-400 mb-12 max-w-2xl mx-auto [text-wrap:balance]'>
             Every successful campaign begins with a conversation about your
-            goals. Let's talk about how we can turn your vision into measurable
-            results.
+            goals. Let&apos;s talk about how we can turn your vision into
+            measurable results.
           </p>
           <CTAButton href='/contact' aria-label='Book a strategy session'>
             Book a strategy session
