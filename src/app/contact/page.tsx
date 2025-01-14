@@ -27,9 +27,9 @@ export default function Contact() {
           <h1 className='text-5xl md:text-6xl font-light mb-6 tracking-tight [text-wrap:balance]'>
             Transform your vision into impact
           </h1>
-          <p className='text-lg text-gray-400 mb-20 max-w-2xl [text-wrap:balance]'>
-            Book your free creative strategy session and let&apos;s discuss how
-            we can help you achieve your goals through compelling visual
+          <p className='text-lg text-gray-600 dark:text-gray-400 mb-20 max-w-2xl [text-wrap:balance]'>
+            Book your free creative strategy session and let's discuss how we
+            can help you achieve your goals through compelling visual
             storytelling.
           </p>
 
@@ -39,7 +39,7 @@ export default function Contact() {
                 Thanks for reaching out!
               </h2>
               <p className='text-green-700 dark:text-green-300'>
-                We&apos;ll be in touch soon to discuss your project.
+                We'll be in touch soon to discuss your project.
               </p>
             </div>
           ) : (
@@ -145,7 +145,7 @@ export default function Contact() {
                 <p className='text-lg'>
                   <a
                     href='tel:+61488053711'
-                    className='text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors inline-flex items-center group'
+                    className='text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors inline-flex items-center group'
                   >
                     <span className='inline-block transition-transform duration-300 group-hover:translate-x-2'>
                       +61 488 053 711
@@ -158,7 +158,7 @@ export default function Contact() {
                 <p className='text-lg'>
                   <a
                     href='mailto:nathan@dropmotion.au'
-                    className='text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors inline-flex items-center group'
+                    className='text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors inline-flex items-center group'
                   >
                     <span className='inline-block transition-transform duration-300 group-hover:translate-x-2'>
                       nathan@dropmotion.au
@@ -170,7 +170,7 @@ export default function Contact() {
                 </p>
               </div>
             </div>
-            <p className='text-lg text-gray-400'>
+            <p className='text-lg text-gray-600 dark:text-gray-400'>
               Brisbane & Gold Coast, Australia
             </p>
           </div>

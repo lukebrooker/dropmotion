@@ -27,7 +27,7 @@ export default async function Page({
         <h1 className='text-4xl md:text-5xl font-light mb-6'>
           {project.title}
         </h1>
-        <p className='text-lg text-gray-400 mb-12 max-w-2xl'>
+        <p className='text-lg text-gray-600 dark:text-gray-400 mb-12 max-w-2xl'>
           {project.description}
         </p>
 
@@ -37,26 +37,27 @@ export default async function Page({
             className='absolute inset-0 w-full h-full'
             allow='autoplay; fullscreen; picture-in-picture'
             allowFullScreen
+            title={`${project.title} video`}
           />
         </div>
 
         <div className='flex justify-between items-center'>
           <Link
             href='/'
-            className='text-gray-400 hover:text-white transition-colors inline-flex items-center group'
+            className='text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-white transition-colors inline-flex items-center group'
           >
             <span className='mr-2 opacity-60 group-hover:opacity-100 transition-opacity rotate-180'>
               →
             </span>
             <span className='transition-transform duration-300 group-hover:-translate-x-2'>
-              Back to Projects
+              Back to projects
             </span>
           </Link>
           <a
             href={project.videoUrl}
             target='_blank'
             rel='noopener noreferrer'
-            className='text-gray-400 hover:text-white transition-colors inline-flex items-center group'
+            className='text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-white transition-colors inline-flex items-center group'
           >
             <span className='transition-transform duration-300 group-hover:translate-x-2'>
               View on Vimeo

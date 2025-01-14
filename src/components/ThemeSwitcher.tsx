@@ -15,7 +15,7 @@ export function ThemeSwitcher() {
   return (
     <button
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      className='text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors'
+      className='text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors'
       aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
     >
       {theme === "dark" ? (

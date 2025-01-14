@@ -14,15 +14,36 @@ const albertSans = Albert_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "Drop Motion | Creative Video Agency",
+  title: "Drop Motion | Creative video agency",
   description:
-    "We transform your business vision into compelling visual stories that drive real results.",
+    "We transform your business vision into compelling visual stories that drive real results. Brisbane & Gold Coast's trusted video production agency.",
+  metadataBase: new URL("https://dropmotion.au"),
+  openGraph: {
+    title: "Drop Motion | Creative video agency",
+    description:
+      "We transform your business vision into compelling visual stories that drive real results. Brisbane & Gold Coast's trusted video production agency.",
+    type: "website",
+    locale: "en_AU",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Drop Motion | Creative video agency",
+    description:
+      "We transform your business vision into compelling visual stories that drive real results. Brisbane & Gold Coast's trusted video production agency.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  alternates: {
+    canonical: "https://dropmotion.au",
+  },
 }
 
 function Navigation() {
   return (
     <nav
-      className='fixed top-0 left-0 right-0 z-50 bg-white/5 dark:bg-black/5 backdrop-blur-sm'
+      className='fixed top-0 left-0 right-0 z-50 bg-white/30 dark:bg-black/5 backdrop-blur-sm'
       role='navigation'
       aria-label='Main navigation'
     >
