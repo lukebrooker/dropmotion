@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer"
 import { Navigation } from "@/components/Navigation"
 import { ProjectThemeProvider } from "@/components/ProjectThemeProvider"
 import { ThemeProvider } from "@/components/ThemeProvider"
+import { ViewTransitionStyles } from "@/components/ViewTransitionStyles"
 import type { Metadata } from "next"
 import { Albert_Sans } from "next/font/google"
 import "./globals.css"
@@ -49,48 +50,7 @@ export default function RootLayout({
     <html lang='en' suppressHydrationWarning>
       <head>
         <Favicon />
-        <style>
-          {`
-            ::view-transition-old(page),
-            ::view-transition-new(page) {
-              animation-duration: 1s;
-            }
-
-            ::view-transition-old(page) {
-              animation-name: fade-and-slide-out;
-            }
-
-            ::view-transition-new(page) {
-              animation-name: fade-and-slide-in;
-            }
-
-            @keyframes fade-and-slide-out {
-              from {
-                opacity: 1;
-                transform: translateY(0);
-              }
-              to {
-                opacity: 0;
-                transform: translateY(-20px);
-              }
-            }
-
-            @keyframes fade-and-slide-in {
-              from {
-                opacity: 0;
-                transform: translateY(20px);
-              }
-              to {
-                opacity: 1;
-                transform: translateY(0);
-              }
-            }
-
-            main {
-              view-transition-name: page;
-            }
-          `}
-        </style>
+        <ViewTransitionStyles />
       </head>
       <body
         className={`${albertSans.className} bg-white dark:bg-black text-gray-900 dark:text-white antialiased min-h-screen flex flex-col`}
