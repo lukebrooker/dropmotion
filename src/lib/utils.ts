@@ -6,9 +6,21 @@ export function toUrlPath(str: string): string {
     .replace(/-+/g, "-")
 }
 
+interface ViewTransition {
+  finished: Promise<void>
+  ready: Promise<void>
+  updateCallbackDone: Promise<void>
+  skipTransition: () => void
+}
+
+interface DocumentWithViewTransition extends Document {
+  startViewTransition?: (callback: () => void) => ViewTransition
+}
+
 export function startViewTransition(callback: () => void) {
-  if ((document as any).startViewTransition) {
-    ;(document as any).startViewTransition(callback)
+  const doc = document as DocumentWithViewTransition
+  if (doc.startViewTransition) {
+    doc.startViewTransition(callback)
   } else {
     callback()
   }
