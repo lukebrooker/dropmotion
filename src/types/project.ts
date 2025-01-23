@@ -5,4 +5,5 @@ export type Project = {
   description: string | null
   videoUrl: string
   thumbnail: string
+  status?: string
 }

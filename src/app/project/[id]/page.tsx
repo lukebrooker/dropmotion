@@ -1,6 +1,6 @@
+import { BackLink } from "@/components/BackLink"
 import projects from "@/data/projects.json"
 import { toUrlPath } from "@/lib/utils"
-import Link from "next/link"
 import { notFound } from "next/navigation"
 
 export function generateStaticParams() {
@@ -33,26 +33,16 @@ export default async function Page({
 
         <div className='relative aspect-video w-full bg-gray-900 mb-12'>
           <iframe
-            src={`https://player.vimeo.com/video/${project.videoId}?h=00000000&title=0&byline=0&portrait=0&controls=1&dnt=1&autoplay=0`}
+            src={`https://player.vimeo.com/video/${project.videoId}?h=7379dc0e7c&badge=0&autopause=0&byline=0&title=0&player_id=0&app_id=58479`}
             className='absolute inset-0 w-full h-full'
-            allow='fullscreen; picture-in-picture'
+            allow='autoplay; fullscreen; picture-in-picture'
             allowFullScreen
             title={`${project.title} video`}
           />
         </div>
 
         <div className='flex justify-between items-center'>
-          <Link
-            href='/'
-            className='text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-white transition-colors inline-flex items-center group'
-          >
-            <span className='mr-2 opacity-60 group-hover:opacity-100 transition-opacity rotate-180'>
-              →
-            </span>
-            <span className='transition-transform duration-300 group-hover:-translate-x-2'>
-              Back to projects
-            </span>
-          </Link>
+          <BackLink href='/'>Back to projects</BackLink>
           <a
             href={project.videoUrl}
             target='_blank'
