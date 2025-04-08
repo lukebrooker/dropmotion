@@ -157,11 +157,11 @@ export default function Contact() {
                 </p>
                 <p className='text-lg'>
                   <a
-                    href='mailto:nathan@dropmotion.au'
+                    href='mailto:nathan@dropmotion.com.au'
                     className='text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors inline-flex items-center group'
                   >
                     <span className='inline-block transition-transform duration-300 group-hover:translate-x-2'>
-                      nathan@dropmotion.au
+                      nathan@dropmotion.com.au
                     </span>
                     <span className='ml-2 opacity-0 transition-opacity group-hover:opacity-100'>
                       →
